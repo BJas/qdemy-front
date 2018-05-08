@@ -1,0 +1,84 @@
+[
+	{
+		"index": {
+			"title": "Main",
+			"description": "Qdemy",
+			"ogTitle": "Learn and code",
+			"ogUrl": "",
+			"ogSiteName": "qdemy.kz",
+			"ogImage": "",
+			"ogImageWidth": "640",
+			"ogImageHeight": "480"
+        },
+		"courses": {
+			"title": "Courses",
+			"description": "Qdemy",
+			"ogTitle": "Learn and code",
+			"ogUrl": "",
+			"ogSiteName": "qdemy.kz",
+			"ogImage": "",
+			"ogImageWidth": "640",
+			"ogImageHeight": "480"
+		},
+		"main_details": {
+			"title": "",
+			"description": "Qdemy",
+			"ogTitle": "Learn and code",
+			"ogUrl": "",
+			"ogSiteName": "qdemy.kz",
+			"ogImage": "",
+			"ogImageWidth": "640",
+			"ogImageHeight": "480"
+		},
+		"module": {
+			"title": "Module",
+			"description": "Qdemy",
+			"ogTitle": "Learn and code",
+			"ogUrl": "",
+			"ogSiteName": "qdemy.kz",
+			"ogImage": "",
+			"ogImageWidth": "640",
+			"ogImageHeight": "480"
+        },
+		"submodule": {
+			"title": "Tasks and Poblems",
+			"description": "Qdemy",
+			"ogTitle": "Learn and code",
+			"ogUrl": "",
+			"ogSiteName": "qdemy.kz",
+			"ogImage": "",
+			"ogImageWidth": "640",
+			"ogImageHeight": "480"
+        },
+		"profile": {
+			"title": "Profile",
+			"description": "Qdemy",
+			"ogTitle": "Learn and code",
+			"ogUrl": "",
+			"ogSiteName": "qdemy.kz",
+			"ogImage": "",
+			"ogImageWidth": "640",
+			"ogImageHeight": "480"
+        },
+		"problems": {
+			"title": "Problem",
+			"description": "Qdemy",
+			"ogTitle": "Learn and code",
+			"ogUrl": "",
+			"ogSiteName": "qdemy.kz",
+			"ogImage": "",
+			"ogImageWidth": "640",
+			"ogImageHeight": "480"
+        },
+		"competation": {
+			"title": "Competation",
+			"description": "Qdemy",
+			"ogTitle": "Learn and code",
+			"ogUrl": "",
+			"ogSiteName": "qdemy.kz",
+			"ogImage": "",
+			"ogImageWidth": "640",
+			"ogImageHeight": "480"
+        }
+    }
+]

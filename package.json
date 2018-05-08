@@ -1,0 +1,37 @@
+{
+  "name": "create-next-example-app",
+  "version": "1.0.0",
+  "main": "./pages/index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "autoprefixer": "^8.4.1",
+    "axios": "^0.18.0",
+    "circular-json": "^0.5.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "next": "5.1.0",
+    "next-routes": "^1.4.1",
+    "react": "^16.3.2",
+    "react-codemirror": "^1.0.0",
+    "react-dom": "16.3.2",
+    "react-html-converter": "^0.3.2",
+    "react-modal": "^3.4.2",
+    "react-render-html": "^0.6.0",
+    "react-router": "^4.2.0",
+    "react-simple-popover": "^0.2.4",
+    "react-spinners": "^0.3.2",
+    "react-vis": "^1.9.3",
+    "redux": "^4.0.0",
+    "string-to-json": "^0.1.0",
+    "styled-components": "^3.2.6",
+    "video-react": "^0.10.4",
+    "webpack": "^4.7.0"
+  },
+  "devDependencies": {
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "webpack-dev-server": "^3.1.0"
+  }
+}

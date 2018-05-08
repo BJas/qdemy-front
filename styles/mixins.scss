@@ -1,0 +1,97 @@
+@mixin clearfix() {
+    &::after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+  
+  /* Media queries 
+     Large Devices, Wide Screens */
+  
+  @mixin large-desktops {
+    @media only screen and (max-width : 1439px) {
+      @content;
+    }
+  }
+  
+  /* Medium Devices, Desktops */
+  @mixin desktops {
+    @media only screen and (max-width : 991px) {
+      @content;
+    }
+  }
+  
+  /* Small Devices, Tablets */
+  @mixin tablets {
+    @media only screen and (max-width : 767px) {
+      @content;
+    }
+  }
+  
+  /* Extra Small Devices, Phones */ 
+  @mixin phones {
+    @media only screen and (max-width : 479px) {
+      @content;
+    }
+  }
+  
+  /* Custom, iPhone Retina */ 
+  @mixin small-phones {
+    @media only screen and (max-width : 319px) {
+      @content;
+    }
+  }
+  
+  @mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+      @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+      @content;
+    }
+    @-o-keyframes #{$animation-name} {
+      @content;
+    }  
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+  
+  @mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+  }
+
+  @mixin animationFillMode {
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;      
+  }
+  
+  @mixin rotate($degree) {
+    -webkit-transform: rotate(#{$degree});
+    -moz-transform: rotate(#{$degree});
+    -ms-transform:  rotate(#{$degree});
+    -o-transform:  rotate(#{$degree});
+    transform:  rotate(#{$degree});      
+  }
+  
+  @mixin transform($type) {
+    -webkit-transform: #{$type};
+    -moz-transform: #{$type};
+    -ms-transform: #{$type};
+    -o-transform: #{$type};
+    transform: #{$type};      
+  }
+  

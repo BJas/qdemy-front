@@ -1,0 +1,108 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Gabriela');
+@import "~react-vis/dist/style"; 
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  margin: 70px 0 0 250px;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.root, .main, #__next>div, #__next {
+  height: 100%;
+}
+
+.font-slabo {
+  font-family: 'Slabo 27px', serif;
+}
+
+.font-sans {
+  font-family: 'Gabriela', sans-serif;
+}
+
+@include keyframes(SearchInputAnimation) {
+  from { 
+    opacity: 0;
+    @include transform('translateX(70px)'); 
+  } 
+  to { 
+    opacity: 1;
+    @include transform('translateX(0)'); 
+  }
+}
+
+.search-animation {
+  opacity: 0;
+  @include animation('0.5s ease 0s 1 SearchInputAnimation');
+  @include animationFillMode;
+}
+
+@include keyframes(SearchResultAnimation) {
+  0% { 
+    width: 0;
+  } 
+  50% {
+    width: 320px;
+  }
+  75% {
+    width: 800px;
+  }
+  100% { 
+    width: calc(100%-500px);
+    background-color: #50667b;
+  }
+}
+
+.search-result-animation {
+  @include animation('3s ease 0s 1 SearchResultAnimation');
+  @include animationFillMode;
+}
+
+@include keyframes(PopoverAnimation) {
+  from { 
+    width: 0;
+  } 
+  to { 
+    width: 100%;
+    background-color: rgba(102, 102, 102, 0.1);
+  }
+}
+
+.popover-hover:hover {
+  @include animation('0.6s ease-out 0s 1 PopoverAnimation');
+  @include animationFillMode;
+}
